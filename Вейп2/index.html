@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Your site's title should be here</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Your site's description should be here">
+  <meta name="keywords" content="Your site's keywords should be here">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="stylesheet" href="style.css">
+  <!--[if IE 6]>
+	<style type="text/css">
+		* html .group {
+			height: 1%;
+		}
+	</style>
+  <![endif]-->
+  <!--[if IE 7]>
+	<style type="text/css">
+		*:first-child+html .group {
+			min-height: 1px;
+		}
+	</style>
+  <![endif]-->
+  <!--[if lt IE 9]> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> 
+  <![endif]-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/match-height.js"></script>
+  <script>
+    $(function () {
+      $('.match-height-bootstrap-row > * > *').matchHeight();
+      $('.match-height > *').matchHeight();
+    })
+  </script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header__top">
+      <nav class="navigation">
+        <div class="container group">
+          <span class="icon-bars"></span>
+          <ul>
+            <li><a href="Katalog/index.html" class="katalog">КАТАЛОГ</a></li>
+            <li><a href="#" class="magaziny">МАГАЗИНЫ</a></li>
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="" width="157" height="152"></a>
+            <li><a href="tovar/tovar.html" class="delivery">ДОСТАВКА</a></li>
+            <li><a href="#" class="onas">О НАС</a></li>
+           
+          </ul>
+        </div>
+    </div>
+    <div class="prevu group">
+      <p class="text-2">Миссия предприятия</p>
+      <div class="col-7">
+        <div class="korzina group">
+          <div class="korzina-ikonka"></div>
+          <p class="text-3">Корзина пуста</p>
+        </div>
+        <div class="foto-holder">
+          Фото
+        </div>
+      </div>
+    </div>
